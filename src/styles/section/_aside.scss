@@ -93,8 +93,7 @@
     align-items: center;
 
     @include phones() {
-        // min-height: 40%;
-        // display: none;
+        padding-bottom: 20%;
        }
 }
 

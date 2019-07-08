@@ -1,0 +1,138 @@
+.speakers__title{
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 80%;
+ }
+
+.slider {
+    display: flex;
+    width: 720px;
+    overflow: hidden;
+    // margin: 0 10px;
+    @include laptops() {
+        width: 600px;
+       }
+	@media screen and (max-width: 900px) {
+        width: 480px;
+       }
+    @include tablets() {
+        width: 360px;
+       }
+    @include phones() {
+        width: 120px;
+       }
+}
+
+.slider__list{
+    display: flex;
+    position: relative;
+    color: #444;
+    will-change: right;
+    transition: right 0.3s;
+}
+
+.slider__item{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 120px;
+//   height: 140px;
+}
+
+.speakers__content{
+    display: flex;
+    justify-content: space-between;
+    @include phones() {
+        flex-direction: column;
+        align-items: center;
+       }
+}
+
+.slider__pic{
+    width: 100px;
+}
+
+.speaker__name{
+    font-size: 0.9em;
+    color: gray;
+    display: flex;
+    
+}
+
+.speaker__rank{
+    border-bottom: 2px solid #286082;;
+    margin-right: 5px;
+}
+
+.speaker__position{
+    color: #286082;;
+    font-size: 0.7em;
+    margin-top: 3px;
+}
+
+
+
+.arrow {
+    font-size: 1.5em;
+    color: gray;
+    cursor: pointer;
+  }
+
+  #left{
+      margin-left: 20px;
+      @include phones() {
+        margin-left: 0;
+       }
+  }
+
+  .slider__apply{
+      width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include phones() {
+        width: 100%;
+        margin-top: 1em;
+       }
+  }
+
+  .apply__text{
+      width: 4em;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.3em;
+      @include phones() {
+        width: 100%;
+       }
+  }
+
+  .apply__btn{
+    border: none;
+    border-radius: 50px;
+    background-color: #1a8eb1;
+    width: 6.25em;
+    // margin-left: 20%;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 100;
+    transition: .3s;
+    &:hover{
+        background-color: #1a7e9c; 
+    }
+    @include phones() {
+        width: 9.25em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+       }
+  }

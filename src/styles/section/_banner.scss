@@ -1,0 +1,79 @@
+.banner{
+    min-height: 65vh;
+    min-width: 100%;
+    background: url('../../img/background/Background.jpg') center center no-repeat;
+    background-size: cover;
+    filter: contrast(60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include phones() {
+        min-height: 100vh;
+        justify-content: space-between;
+       }
+}
+
+.title{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner__title{
+    color: #ffff;
+    width: 50%;
+    text-align: right;
+    padding-right: 2%;
+    font-weight: 100;
+    @include phones() {
+        width: 100%;
+       }
+}
+
+.banner__desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner__date{
+    color: #ffff;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.banner__btn{
+    background-color: rgb(36, 148, 201);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: .3s;
+    &:hover{
+        background-color: rgb(12, 158, 226);
+    }
+}
+
+.banner__text{
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: 100;
+}
+
+.banner__link{
+    color: #fff;
+    font-size: 0.75em;
+    transition: .3s;
+    &:hover{
+        opacity: 0.8;
+        text-decoration: none;
+    }
+}
+
+.banner__more{
+    margin-bottom: 15px;
+
+}

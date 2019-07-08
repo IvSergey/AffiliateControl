@@ -1,0 +1,94 @@
+.gamb__btn{
+
+    position: absolute;
+   display: none;
+   width: 30px;
+   height: 5px;
+   border: none;
+   border-radius: 2px;
+   background-color: black;
+   cursor: pointer;
+   top: 20%;
+   right: 20%;
+   @include phones() {
+    display:block;
+  }
+   
+
+  &:before{
+   top: -10px;
+   left: 0;
+   content: "";
+   position: absolute;
+   display: block;
+   width: 30px;
+   height: 5px;
+   border: none;
+   border-radius: 2px;
+   background-color: black;
+
+  
+  }
+
+  &:after{
+   top: 10px;
+   left: 0;
+   content: "";
+   position: absolute;
+   display: block;
+   width: 30px;
+   height: 5px;
+   border: none;
+   border-radius: 2px;
+   background-color: black;
+  
+  }
+  
+}
+
+.gamb__btn--active{
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    cursor: pointer;
+    top: 6%;
+    right: 20%;
+    transform:rotate(45deg);
+    z-index: 10;
+    @include phones() {
+        display:block;
+      }
+   
+
+ &:before{
+   top: 0px;
+   left: 0;
+   content: "";
+   position: absolute;
+   display: block;
+   width: 30px;
+   height: 5px;
+   border: none;
+   border-radius: 2px;
+   background-color: black;
+ }
+ &:after{
+   top: 0px;
+   left: 0;
+   content: "";
+   position: absolute;
+   display: block;
+   width: 30px;
+   height: 5px;
+   border: none;
+   border-radius: 2px;
+   background-color: black;
+   transform:rotate(90deg);
+ }
+
+
+}

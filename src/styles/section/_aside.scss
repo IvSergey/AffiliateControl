@@ -1,0 +1,138 @@
+.aside{
+    height: 100vh;
+    width: 20%;
+    position: relative;
+    border: 1px solid #9e9e9e52;
+   
+
+    @include phones() {
+        width: 100%;
+        border: none;
+        height: 100%;
+
+       }
+}
+
+.aside--active{
+    position: relative;
+    border: 1px solid #9e9e9e52;
+    display: none;
+    width: 100%;
+    border: none;
+    height: 100%;
+    @include phones() {
+        display: block;
+       }
+}
+
+
+
+.aside__header{
+    min-height: 30%;
+    background-color: #3f7974;
+    @include phones() {
+        min-height: 30vh;
+       
+       }
+}
+
+.aside__menu{
+    @include phones() {
+        display: none;
+       
+       }
+}
+
+.aside__menu--active{
+    display: block;
+    // @include phones() {
+    //     display: block;
+       
+    //    }
+}
+
+.aside__title{
+    padding-left: 5%;
+    width: 25%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.aside__triangle{
+    position: relative;
+    @include phones() {
+        
+       
+       }
+    
+}
+
+.triangle__tr{
+    position: absolute;
+    margin-top: -39%;
+    fill: #fff;
+
+    
+    // @include laptops() {
+    //     margin-top: -53%;
+    // }
+    
+    // @include tablets() {
+    //     margin-top: -64%;
+    // }
+}
+
+.aside__list{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones() {
+        // min-height: 40%;
+        // display: none;
+       }
+}
+
+.aside__contact {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @include phones() {
+        // display: none;
+       
+       }
+}
+
+.aside__btn{
+    color: #fff;
+    height: 50px;
+    border: none;
+    width: 100%;
+    background-color: #400c0c;
+    cursor: pointer;
+    transition: .3s;
+    
+    &:hover{
+        background-color: #6d0303;
+    }
+}
+
+.aside__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 1em;
+    transition: .3s;
+
+    &:hover{
+        // text-decoration: underline;
+        color: #400c0c;
+        // transition: .4s;
+
+    }
+}
+
